@@ -5,9 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: './src/index.js',
-        print: './src/print.js',
-        another: './src/another-module.js'
+        index: './src/index.js'
     },
     plugins: [
         new CleanWebpackPlugin(['dist']), // 清理 /dist 文件夹
@@ -17,6 +15,7 @@ module.exports = {
     ],
     output: {
         filename: '[name].bundle.js',
+        chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     }
 };

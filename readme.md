@@ -24,5 +24,19 @@ CommonsChunkPlugin 插件可以将公共的依赖模块提取到已有的入口 
 
 
 
+## 动态导入(dynamic imports)
+
+当涉及到动态代码拆分时，webpack 提供了两个类似的技术。对于动态导入，第一种，也是优先选择的方式是，使用符合 ECMAScript 提案 的 import() 语法。第二种，则是使用 webpack 特定的 require.ensure。让我们先尝试使用第一种……
+
+import() 调用会在内部用到 promises。如果在旧有版本浏览器中使用 import()，记得使用 一个 polyfill 库（例如 es6-promise 或 promise-polyfill），来 shim Promise。
+
+
+注意，在注释中使用了 webpackChunkName。这样做会导致我们的 bundle 被命名为 lodash.bundle.js ，而不是 [id].bundle.js 。想了解更多关于 webpackChunkName 和其他可用选项，请查看 import() 相关文档。让我们执行 webpack，查看 lodash 是否会分离到一个单独的 bundle：
+
+
+
+
+
+
 
 
