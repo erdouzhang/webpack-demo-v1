@@ -3,16 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
-
 module.exports = {
     entry: {
-        app: './src/index.js',
-        print: './src/print.js'
+        index: './src/index.js',
+        print: './src/print.js',
+        another: './src/another-module.js'
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
-        new HtmlWebpackPlugin({
-            title: 'Output Management'
+        new CleanWebpackPlugin(['dist']), // 清理 /dist 文件夹
+        new HtmlWebpackPlugin({ // 默认生成index.html文件
+            title: 'Code Splitting'
         })
     ],
     output: {
