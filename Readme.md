@@ -17,7 +17,10 @@ $ npm install --save-dev webpack@<version>
 
 
 ### 全局安装
+```bash
+$ npm install --global webpack
 
+```
 
 ## 快速开始
 
