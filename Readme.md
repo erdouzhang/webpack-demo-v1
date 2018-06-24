@@ -1,5 +1,5 @@
 
-## 资源管理版本v1
+## 资源管理版本v3
 ## 安装
 安装webpack的方法
 
@@ -56,6 +56,11 @@ $ npm install clean-webpack-plugin --save-dev
 你可能会感兴趣，webpack及其插件似乎“知道”应该哪些文件生成。答案是，通过 manifest，webpack 能够对「你的模块映射到输出 bundle 的过程」保持追踪。如果你对通过其他方式来管理 webpack 的输出更感兴趣，那么首先了解 manifest 是个好的开始。
 
 通过使用 WebpackManifestPlugin，可以直接将数据提取到一个 json 文件，以供使用。
+
+## 管理输出
+到目前为止，我们在 index.html 文件中手动引入所有资源，然而随着应用程序增长，并且一旦开始对文件名使用哈希(hash)]并输出多个 bundle，手动地对 index.html 文件进行管理，一切就会变得困难起来。然而，可以通过一些插件，会使这个过程更容易操控。
+
+
  
 ## 开发
   先来看看如何建立一个开发环境，使我们的开发变得更容易一些。
@@ -107,6 +112,7 @@ webpack-dev-middleware 是一个容器(wrapper)，它可以把 webpack 处理后
 $ npm install --save-dev express webpack-dev-middleware
 
 ```
+
 
 ## Tests
 
