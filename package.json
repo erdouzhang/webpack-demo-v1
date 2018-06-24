@@ -1,0 +1,20 @@
+{
+  "name": "webpack-demo-v4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".DS_Store"
+  },
+  "author": "",
+  "license": "ISC"
+}
