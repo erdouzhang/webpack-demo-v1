@@ -29,33 +29,9 @@ $ npm install --global webpack
 
 ```
 
-## 快速开始
+## 基本安装
 
-  The quickest way to get started with express is to utilize the executable [`express(1)`](https://github.com/expressjs/generator) to generate an application as shown below:
-
-  Install the executable. The executable's major version will match Express's:
-
-```bash
-$ npm install -g express-generator@4
-```
-
-  Create the app:
-
-```bash
-$ express /tmp/foo && cd /tmp/foo
-```
-
-  Install dependencies:
-
-```bash
-$ npm install
-```
-
-  Start the server:
-
-```bash
-$ npm start
-```
+首先我们创建一个目录，初始化 npm，然后 在本地安装 webpack，接着安装 webpack-cli（此工具用于在命令行中运行 webpack）：
 
 ## Philosophy
 
